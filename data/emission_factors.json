@@ -1,0 +1,17 @@
+{
+    "travel": {
+        "car": 0.2,
+        "bus": 0.05,
+        "train": 0.04,
+        "flight": 0.25
+    },
+    "electricity": {
+        "grid": 0.45,
+        "solar": 0.05
+    },
+    "food": {
+        "meat": 7.2,
+        "vegetarian": 2.0,
+        "vegan": 1.5
+    }
+}
