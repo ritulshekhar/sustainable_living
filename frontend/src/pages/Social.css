@@ -1,0 +1,36 @@
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  transition: background var(--transition);
+  border-radius: var(--radius-sm);
+  cursor: default;
+}
+.leaderboard-row:last-child { border-bottom: none; }
+.leaderboard-row:hover { background: rgba(255,255,255,0.02); }
+.leaderboard-row.is-you {
+  background: var(--accent-dim);
+  border-color: var(--border-bright);
+  padding: 14px 12px;
+  margin: 0 -12px;
+  border-radius: var(--radius-md);
+}
+
+.lb-rank {
+  width: 36px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.rank-number {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}

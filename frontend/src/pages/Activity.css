@@ -1,0 +1,95 @@
+.activity-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  align-items: start;
+}
+
+.activity-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.quick-btns {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.submit-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 16px;
+  font-size: 1rem;
+}
+
+/* Impact Sidebar */
+.impact-sidebar {
+  position: sticky;
+  top: 32px;
+}
+.impact-card { border-color: var(--border-bright); }
+
+.impact-total {
+  text-align: center;
+  padding: 20px 0;
+}
+.impact-co2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.impact-unit {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+.impact-equiv {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.impact-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.breakdown-row {}
+.breakdown-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.recommendation {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.rec-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 900px) {
+  .activity-layout { grid-template-columns: 1fr; }
+  .impact-sidebar { position: static; }
+  .form-row { grid-template-columns: 1fr; }
+}
